@@ -1,0 +1,8 @@
+pyrogram
+tgcrypto
+insightface
+opencv-python
+moviepy
+tqdm
+onnxruntime-gpu
+numpy
