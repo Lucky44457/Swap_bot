@@ -5,7 +5,7 @@ from pyrogram.types import Message
 
 API_ID = 23939637
 API_HASH = "477f51720ede3eef6997dbc442151c43"
-BOT_TOKEN = "7796721104:AAFZ1S0SB96J-xUXrGA1505f13SBkNtq_Io"
+BOT_TOKEN = "7969356963:AAGaXsF5II5EovWf9OAGmGK6ebvrcvQzhw8"
 
 app = Client("faceswap_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
 sessions = {}
