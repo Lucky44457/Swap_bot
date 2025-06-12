@@ -383,7 +383,6 @@ async def process_video(client, event, url, cookies_env_var, check_duration_and_
      
         if os.path.exists(download_path) and os.path.getsize(download_path) > SIZE:
             prog = await client.send_message(chat_id, "**__Starting Upload...__**")
-            await split_and_upload_file(app, chat_id, download_path, caption)
             await prog.delete()
          
         if os.path.exists(download_path):
@@ -425,7 +424,6 @@ async def process_video(client, event, url, cookies_env_var, check_duration_and_
             os.remove(thumbnail_file)
  
 
-async def split_and_upload_file(app, sender, file_path, caption):
     if not os.path.exists(file_path):
         await app.send_message(sender, "❌ File not found!")
         return
@@ -567,3 +565,4 @@ def convert(seconds: int) -> str:
     hours, remainder = divmod(seconds, 3600)
     minutes, seconds = divmod(remainder, 60)
     return f"{hours}:{minutes:02d}:{seconds:02d}"
+                 
